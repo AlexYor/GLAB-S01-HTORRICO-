@@ -1,0 +1,42 @@
+
+
+
+void main() {
+ print('Hola');
+  List<int> numeros = [1,2,3,4,5,6,7,8];
+  int suma = 0;
+  int resta = 0;
+  int sumaImpares = 0;
+  int sumaPares = 0;
+  int menor = numeros[0];
+  
+  for (int numero in numeros) {
+    suma += numero;
+  }
+  
+  for (int numeroresta in numeros) {
+    resta -= numeroresta;
+  }
+  
+  for (int numero in numeros){
+    if (numero % 2 == 0){
+      sumaPares += numero;
+    } else {
+      sumaImpares += numero;
+    }
+    
+    
+    if (numero < menor) {
+      menor = numero;
+    }
+  }
+  
+  print('La suma es de: $suma');
+  print('La resta es de: $resta');
+  print ('Suma de impares: $sumaImpares');
+  print('Suma de Pares: $sumaPares');
+  print('El numero menor es: $menor');
+  
+}
+
+
